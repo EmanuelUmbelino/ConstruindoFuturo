@@ -81,14 +81,6 @@
                          'fuse-horizontal-navigation-item-active-forced': item.active}"
             [matTooltip]="item.tooltip || ''">
 
-            <!-- Icon -->
-            <ng-container *ngIf="item.icon">
-                <mat-icon
-                    class="fuse-horizontal-navigation-item-icon"
-                    [ngClass]="item.classes?.icon"
-                    [svgIcon]="item.icon"></mat-icon>
-            </ng-container>
-
             <!-- Title & Subtitle -->
             <div class="fuse-horizontal-navigation-item-title-wrapper">
                 <div class="fuse-horizontal-navigation-item-title">
@@ -114,6 +106,14 @@
                         {{item.badge.title}}
                     </div>
                 </div>
+            </ng-container>
+
+            <!-- Icon -->
+            <ng-container *ngIf="item.icon">
+                <mat-icon
+                    class="fuse-horizontal-navigation-item-icon"
+                    [ngClass]="item.classes?.icon"
+                    [svgIcon]="item.icon"></mat-icon>
             </ng-container>
         </div>
     </div>
