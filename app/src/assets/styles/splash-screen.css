@@ -8,7 +8,7 @@ body fuse-splash-screen {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #111827;
+    background-color: white;
     color: #F9FAFB;
     z-index: 999999;
     pointer-events: none;
@@ -20,6 +20,17 @@ body fuse-splash-screen {
 body fuse-splash-screen img {
     width: 120px;
     max-width: 120px;
+    -webkit-animation: gelatine 3s infinite ease-in-out both;
+    animation: gelatine 3s infinite ease-in-out both;
+    animation-delay: 2s;
+}
+
+@keyframes gelatine {
+    from, to { transform: scale(1, 1); }
+    7% { transform: scale(0.9, 1.1); }
+    14% { transform: scale(1.1, 0.9); }
+    21% { transform: scale(0.95, 1.05); }
+    28% { transform: scale(1,1); }
 }
 
 body fuse-splash-screen .spinner {

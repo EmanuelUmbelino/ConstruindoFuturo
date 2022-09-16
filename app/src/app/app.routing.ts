@@ -8,6 +8,7 @@ import { InitialDataResolver } from 'app/app.resolvers';
 export const appRoutes: Route[] = [
     // Redirect empty path to '/example'
     { path: '', pathMatch: 'full', redirectTo: 'home' },
+    { path: '**', pathMatch: 'full', redirectTo: 'home' },
 
     {
         path: '',
@@ -17,10 +18,10 @@ export const appRoutes: Route[] = [
         },
         children: [
             {
-                path: 'home',
+                path: '',
                 loadChildren: () =>
-                    import('app/modules/admin/example/example.module').then(
-                        (m) => m.ExampleModule
+                    import('app/modules/landing/landing.module').then(
+                        (m) => m.LandingModule
                     ),
             },
         ],
