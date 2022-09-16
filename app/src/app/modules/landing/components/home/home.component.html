@@ -1,28 +1,66 @@
 <ng-container *transloco="let t">
     <div class="flex flex-col flex-auto w-full">
-        <img
-            class="absolute h-screen w-screen object-cover brightness-50"
-            src="assets/images/photos/1.JPG"
-        />
         <div
-            class="flex flex-col h-screen justify-center items-center z-10 px-12 text-center"
+            class="h-screen bg-[url('/assets/images/photos/roda.jpg')] bg-left bg-cover"
         >
-            <img
-                class="w-30 sm:w-50 mb-20"
-                src="assets/images/logo/logo-white.svg"
-            />
-            <div class="text-white text-2xl sm:text-6xl font-medium">
-                {{ t("home.Adolescentes em prol do") }}
-            </div>
-            <div class="text-white text-4xl sm:text-6xl font-extrabold">
-                {{ t("Desenvolvimento Sustentável") }}
+            <div
+                class="flex flex-col h-screen justify-center items-center px-10 text-center backdrop-brightness-50"
+            >
+                <img
+                    class="w-30 sm:w-50 mb-20 z-0"
+                    src="assets/images/logo/logo-white.svg"
+                />
+                <div class="text-white text-2xl sm:text-6xl font-medium z-0">
+                    {{ t("home.Adolescentes em prol do") }}
+                </div>
+                <div class="text-white text-4xl sm:text-6xl font-extrabold z-0">
+                    {{ t("Desenvolvimento Sustentável") }}
+                </div>
             </div>
         </div>
-        <div class="flex flex-col h-screen">
-            <div class="flex-auto p-6 sm:p-10 z-10">
+        <div class="bg-white">
+            <div
+                class="flex flex-row flex-wrap justify-center items-center px-10 my-20"
+            >
+                <div class="pr-0 sm:pr-20 lg:pr-40 w-full sm:w-1/2 lg:w-2/5">
+                    <div class="text-4xl font-bold z-0">
+                        {{ t("home.Conheça o Projeto") }}
+                    </div>
+                    <div class="text-2xl font-light z-0">
+                        {{ t("home.resumo-sobre") }}
+                    </div>
+                    <button mat-stroked-button color="primary" class="mt-3">
+                        <mat-icon svgIcon="arrow_right"></mat-icon>
+                        {{ t("Sobre nós") }}
+                    </button>
+                </div>
+                <img
+                    class="w-2/3 sm:w-60 z-0 pt-20 sm:pt-0 justify-self-center"
+                    src="assets/images/logo/logo.svg"
+                />
+            </div>
+        </div>
+        <div class="bg-[url('/assets/images/photos/camisa.jpg')] bg-center">
+            <div
+                class="flex flex-row flex-wrap justify-center items-center px-10 py-40 backdrop-brightness-50"
+            >
                 <div
-                    class="h-full border-2 border-dashed border-gray-300 rounded-2xl"
-                ></div>
+                    class="pr-0 sm:pr-20 lg:pr-40 w-full sm:w-1/2 lg:w-2/5 z-0"
+                >
+                    <div class="text-white text-4xl font-bold">
+                        {{ t("home.Criações do CF") }}
+                    </div>
+                    <div class="text-white text-2xl font-light">
+                        {{ t("home.resumo-projetos") }}
+                    </div>
+                    <button mat-stroked-button class="mt-3 text-white">
+                        <mat-icon
+                            svgIcon="arrow_right"
+                            class="text-white"
+                        ></mat-icon>
+                        {{ t("Projetos") }}
+                    </button>
+                </div>
             </div>
         </div>
     </div>
