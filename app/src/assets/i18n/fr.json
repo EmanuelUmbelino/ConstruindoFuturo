@@ -1,6 +1,14 @@
 {
+    "Home": "Home",
+    "Sobre nós": "About us",
+    "Quem nós somos": "Who we are",
+    "Nosso time": "Our team",
+    "Contato": "Contact",
+    "Faça parte": "Take part",
+    "Programa de Embaixadores": "Ambassador Program",
+    "Comunidade": "Community",
     "home": {
-        "adolescentes-em-prol": "Adolescents for"
+        "Adolescentes em prol do": "Adolescents for"
     },
-    "desenvolvimento-sustentavel": "Sustainable Development"
+    "Desenvolvimento Sustentável": "Sustainable Development"
 }
