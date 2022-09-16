@@ -1,14 +1,19 @@
 {
     "Home": "Home",
-    "Sobre nós": "About us",
+    "Sobre nós": "Sobre nosotros",
     "Quem nós somos": "Who we are",
-    "Nosso time": "Our team",
-    "Contato": "Contact",
-    "Faça parte": "Take part",
-    "Programa de Embaixadores": "Ambassador Program",
-    "Comunidade": "Community",
+    "Nosso time": "Nuestro euipo",
+    "Contato": "Contacto",
+    "Faça parte": "Participar",
+    "Programa de Embaixadores": "Programa de Embajadores",
+    "Comunidade": "Comunidad",
+    "Projetos": "Proyectos",
     "home": {
-        "Adolescentes em prol do": "Adolescents for"
+        "Adolescentes em prol do": "Adolescentes en nombre del",
+        "Conheça o Projeto": "Conoce el Proyecto",
+        "resumo-sobre": "El Construindo Futuro es una organización de adolescentes que desarrollan proyectos socio ambientales para solucionar los problemas de sus comunidades.",
+        "Criações do CF": "Creaciones del CF",
+        "resumo-projetos": "El CF desarrolla proyectos basados en los Objetivos de Desarrollo Sostenible. ¡Conoce las increíbles iniciativas creadas por nuestros voluntarios!"
     },
-    "Desenvolvimento Sustentável": "Sustainable Development"
+    "Desenvolvimento Sustentável": "Desarrollo Sostenible"
 }
