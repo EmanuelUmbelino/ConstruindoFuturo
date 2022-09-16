@@ -10,26 +10,26 @@ export const defaultNavigation: FuseNavigationItem[] = [
     },
     {
         id: 'about',
-        title: 'About us',
+        title: 'Sobre nós',
         type: 'group',
 
         icon: 'mat_outline:arrow_drop_down',
         children: [
             {
                 id: 'who',
-                title: 'Who we are',
+                title: 'Quem nós somos',
                 type: 'basic',
                 link: '/who',
             },
             {
                 id: 'team',
-                title: 'Our Team',
+                title: 'Nosso time',
                 type: 'basic',
                 link: '/team',
             },
             {
                 id: 'contact',
-                title: 'Contact',
+                title: 'Contato',
                 type: 'basic',
                 link: '/contact',
             },
@@ -37,20 +37,20 @@ export const defaultNavigation: FuseNavigationItem[] = [
     },
     {
         id: 'participate',
-        title: 'Take part',
+        title: 'Faça parte',
         type: 'group',
 
         icon: 'mat_outline:arrow_drop_down',
         children: [
             {
                 id: 'ambassador',
-                title: 'Ambassador Program',
+                title: 'Programa de Embaixadores',
                 type: 'basic',
                 link: '/ambassador',
             },
             {
                 id: 'community',
-                title: 'Community',
+                title: 'Comunidade',
                 type: 'basic',
                 link: '/community',
             },

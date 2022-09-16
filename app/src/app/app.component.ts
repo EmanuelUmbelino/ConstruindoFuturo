@@ -1,16 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { TranslocoService } from '@ngneat/transloco';
+import { NavigationService } from './core/navigation/navigation.service';
 
 @Component({
-    selector   : 'app-root',
+    selector: 'app-root',
     templateUrl: './app.component.html',
-    styleUrls  : ['./app.component.scss']
+    styleUrls: ['./app.component.scss'],
 })
-export class AppComponent
-{
+export class AppComponent implements OnInit {
     /**
      * Constructor
      */
-    constructor()
-    {
+    constructor(
+        private translocoService: TranslocoService,
+        private navigationService: NavigationService
+    ) {}
+
+    ngOnInit(): void {
+        this.translocoService.langChanges$.subscribe(() => {
+            this.navigationService.get().subscribe(() => {});
+        });
     }
 }

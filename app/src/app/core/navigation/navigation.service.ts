@@ -2,20 +2,23 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, ReplaySubject, tap } from 'rxjs';
 import { Navigation } from 'app/core/navigation/navigation.types';
+import { TranslocoService } from '@ngneat/transloco';
+import { FuseNavigationItem } from '@fuse/components/navigation';
 
 @Injectable({
-    providedIn: 'root'
+    providedIn: 'root',
 })
-export class NavigationService
-{
-    private _navigation: ReplaySubject<Navigation> = new ReplaySubject<Navigation>(1);
+export class NavigationService {
+    private _navigation: ReplaySubject<Navigation> =
+        new ReplaySubject<Navigation>(1);
 
     /**
      * Constructor
      */
-    constructor(private _httpClient: HttpClient)
-    {
-    }
+    constructor(
+        private _httpClient: HttpClient,
+        private translocoService: TranslocoService
+    ) {}
 
     // -----------------------------------------------------------------------------------------------------
     // @ Accessors
@@ -24,8 +27,7 @@ export class NavigationService
     /**
      * Getter for navigation
      */
-    get navigation$(): Observable<Navigation>
-    {
+    get navigation$(): Observable<Navigation> {
         return this._navigation.asObservable();
     }
 
@@ -36,12 +38,30 @@ export class NavigationService
     /**
      * Get all navigation data
      */
-    get(): Observable<Navigation>
-    {
+    get(): Observable<Navigation> {
         return this._httpClient.get<Navigation>('api/common/navigation').pipe(
             tap((navigation) => {
+                this.translateNavigation(navigation);
+
                 this._navigation.next(navigation);
             })
         );
+    }
+
+    translateNavigation(nav: Navigation): void {
+        Object.keys(nav).forEach((k) => {
+            nav[k].forEach((i: FuseNavigationItem) => this.translateTitle(i));
+        });
+    }
+
+    translateTitle(item: FuseNavigationItem): void {
+        if (item.title) {
+            item.title = this.translocoService.translate(item.title);
+        }
+        if (item.children) {
+            item.children.forEach((i: FuseNavigationItem) =>
+                this.translateTitle(i)
+            );
+        }
     }
 }
