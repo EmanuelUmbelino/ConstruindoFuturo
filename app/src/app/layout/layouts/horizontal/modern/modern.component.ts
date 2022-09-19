@@ -50,7 +50,7 @@ export class ModernLayoutComponent implements OnInit, OnDestroy {
 
     @HostListener('window:scroll', ['$event'])
     checkScroll(): void {
-        this.scrolledFromTop = window.pageYOffset >= 150;
+        this.scrolledFromTop = window.pageYOffset >= 50;
     }
 
     // -----------------------------------------------------------------------------------------------------
