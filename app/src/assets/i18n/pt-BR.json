@@ -8,12 +8,25 @@
     "Programa de Embaixadores": "Programa de Embaixadores",
     "Comunidade": "Comunidade",
     "Projetos": "Projetos",
+    "Visão": "Visão",
+    "Valores": "Valores",
+    "Missão": "Missão",
     "home": {
         "Adolescentes em prol do": "Adolescentes em prol do",
         "Conheça o Projeto": "Conheça o Projeto",
         "resumo-sobre": "O Construindo o Futuro é uma organização de adolescentes que desenvolvem projetos socioambientais para solucionar os problemas de suas comunidades.",
         "Criações do CF": "Criações do CF",
-        "resumo-projetos": "O CF desenvolve projetos baseados nos Objetivos de Desenvolvimento Sustentável. Conheça as incríveis iniciativas implementadas pelos nossos voluntários!"
+        "resumo-projetos": "O CF desenvolve projetos baseados nos Objetivos de Desenvolvimento Sustentável. Conheça as incríveis iniciativas implementadas pelos nossos voluntários!",
+        "resumo-visão": "Engajar líderes jovens de diferentes comunidades do Brasil e do mundo para se tornarem os verdadeiros agentes da mudança onde vivem e, assim, irem conquistando oportunidades e locais de fala.",
+        "resumo-missão": "Promover desenvolvimento sustentável em escolas e comunidades ao empoderar os jovens locais para que sejam verdadeiros agentes de mudança."
+    },
+    "valores": {
+        "protagonismo": "Protagonismo Jovem",
+        "comunidade": "Serviço à Comunidade",
+        "diversidade": "Respeito à Diversidade",
+        "integridade": "Integridade",
+        "vontade": "Boa Vontade",
+        "economico": "Crescimento Econômico Inclusivo e Sustentável"
     },
     "Desenvolvimento Sustentável": "Desenvolvimento Sustentável"
 }
