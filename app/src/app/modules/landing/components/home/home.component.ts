@@ -6,6 +6,13 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None,
 })
 export class HomeComponent {
+    countOptions: any = {
+        enableScrollSpy: true,
+        scrollSpyOnce: true,
+        scrollSpyDelay: 200,
+        duration: 3,
+    };
+
     /**
      * Constructor
      */

@@ -122,6 +122,105 @@
             </div>
         </div>
         <div class="bg-white">
+            <div class="flex flex-wrap lg:px-40 justify-center px-10 mt-20">
+                <div class="text-center flex-1 p-10">
+                    <div class="text-9xl font-bold z-0 text-amber-400">
+                        <span [countUp]="300" [options]="countOptions"></span>
+                    </div>
+                    <div class="text-3xl font-light z-0">
+                        {{ t("home.Projetos Criados") }}
+                    </div>
+                </div>
+                <div class="text-center flex-1 p-10">
+                    <div class="text-9xl font-bold z-0 text-amber-400">
+                        <span [countUp]="10000" [options]="countOptions"></span>
+                    </div>
+                    <div class="text-3xl font-light z-0">
+                        {{ t("home.Pessoas Impactadas") }}
+                    </div>
+                </div>
+                <div class="text-center flex-1 p-10">
+                    <div class="text-9xl font-bold z-0 text-amber-400">
+                        <span [countUp]="45" [options]="countOptions"></span>
+                    </div>
+                    <div class="text-3xl font-light z-0">
+                        {{ t("home.Membros CF") }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white">
+            <div
+                class="flex flex-wrap lg:px-40 justify-center px-10 mb-20 mt-10"
+            >
+                <fuse-card
+                    class="flex flex-col md:flex-row max-w-80 md:max-w-160 w-full m-5"
+                >
+                    <div class="flex-0 w-80 md:w-32">
+                        <img
+                            src="assets/images/avatars/female-15.jpg"
+                            class="w-full h-full object-cover"
+                        />
+                    </div>
+                    <div class="flex flex-col flex-auto m-8">
+                        <div class="text-lg italic leading-relaxed">
+                            Puzzles coffee shop is one of the finest coffee
+                            shops in central downtown in New York. It's quiet;
+                            far away from busy streets and never ending
+                            constructions.
+                        </div>
+                        <div class="text-md font-medium text-primary mt-4">
+                            — Melissa Morillo, Comtent
+                        </div>
+                    </div>
+                </fuse-card>
+                <fuse-card
+                    class="flex flex-col md:flex-row max-w-80 md:max-w-160 w-full m-5"
+                >
+                    <div class="flex-0 w-80 md:w-32">
+                        <img
+                            src="assets/images/avatars/female-20.jpg"
+                            class="w-full h-full object-cover"
+                        />
+                    </div>
+                    <div class="flex flex-col flex-auto m-8">
+                        <div class="text-lg italic leading-relaxed">
+                            Puzzles coffee shop is one of the finest coffee
+                            shops in central downtown in New York. It's quiet;
+                            far away from busy streets and never ending
+                            constructions.
+                        </div>
+                        <div class="text-md font-medium text-primary mt-4">
+                            — Melissa Morillo, Comtent
+                        </div>
+                    </div>
+                </fuse-card>
+            </div>
+        </div>
+        <div class="bg-[url('/assets/images/photos/run.png')] bg-center">
+            <div
+                class="flex flex-row flex-wrap justify-center items-center px-10 py-40 backdrop-brightness-50"
+            >
+                <div
+                    class="pr-0 sm:pr-20 lg:pr-40 w-full sm:w-1/2 lg:w-2/5 z-0"
+                >
+                    <div class="text-white text-4xl font-bold">
+                        {{ t("home.Participe de nossas embaixadas") }}
+                    </div>
+                    <div class="text-white text-2xl font-light">
+                        {{ t("home.resumo-embaixadas") }}
+                    </div>
+                    <button mat-stroked-button class="mt-3 text-white">
+                        <mat-icon
+                            svgIcon="arrow_right"
+                            class="text-white"
+                        ></mat-icon>
+                        {{ t("Projetos") }}
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white">
             <div></div>
         </div>
     </div>
