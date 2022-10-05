@@ -8,12 +8,30 @@
     "Programa de Embaixadores": "Ambassador Program",
     "Comunidade": "Community",
     "Projetos": "Projects",
+    "Visão": "Vision",
+    "Valores": "Values",
+    "Missão": "Mission",
     "home": {
         "Adolescentes em prol do": "Teenagers for",
         "Conheça o Projeto": "Get to know us",
         "resumo-sobre": "The Construindo o Futuro is an organization of teenagers who develop social and environmental projects to solve the problems of their communities.",
         "Criações do CF": "CF Creations",
-        "resumo-projetos": "We develop projects based on the United Nations Sustainable Development Goals. Get to know the initiatives implemented by our volunteers!"
+        "resumo-projetos": "We develop projects based on the United Nations Sustainable Development Goals. Get to know the initiatives implemented by our volunteers!",
+        "resumo-visão": "Engage young leaders from different communities in Brazil and around the world to become true agents of change where they live and, thus, conquer opportunities and places of speech.",
+        "resumo-missão": "Promote sustainable development in schools and communities by empowering local youth to be true agents of change.",
+        "Participe de nossas embaixadas": "Join our embassies",
+        "resumo-embaixadas": "CF embassies are groups of young people who come together to work together towards sustainable development and the UN SDGs in their schools, universities, communities, cities and regions. The CF embassies are formed by: ",
+        "Pessoas Impactadas": "People Impacted",
+        "Projetos Criados": "Created Projects",
+        "Membros CF": "CF Members"
+    },
+    "valores": {
+        "protagonismo": "Youth Protagonism",
+        "comunidade": "Community Service",
+        "diversidade": "Respect for Diversity",
+        "integridade": "Integrity",
+        "vontade": "Good will",
+        "economico": "Inclusive and Sustainable Economic Growth"
     },
     "Desenvolvimento Sustentável": "Sustainable Development"
 }

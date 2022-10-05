@@ -1,4 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { TranslocoService } from '@ngneat/transloco';
 
 @Component({
     selector: 'home-app',
@@ -13,8 +14,14 @@ export class HomeComponent {
         duration: 3,
     };
 
+    depoimentos = Object.keys(this.translocoService.translateObject('depoimentos'));
+
     /**
      * Constructor
      */
-    constructor() {}
+    constructor(private translocoService: TranslocoService) { }
+
+    ngOnInit() {
+        console.log('teste', this.depoimentos);
+    }
 }

@@ -33,5 +33,25 @@
         "vontade": "Boa Vontade",
         "economico": "Crescimento Econômico Inclusivo e Sustentável"
     },
+    "depoimentos": {
+        "1": {
+            "img": "assets/images/avatars/Juliana Janot.jpg",
+            "texto": "Desejo alegria e felicidades",
+            "autor": "Juliana Janot",
+            "cargo": "Diretora"
+        },
+        "2": {
+            "img": "assets/images/avatars/Julia Sawyer.jpg",
+            "texto": "Dias de luta, dias de glória",
+            "autor": "Julia Sawyer",
+            "cargo": "Diretora"
+        },
+        "3": {
+            "img": "assets/images/avatars/Arthur Uguen.jpg",
+            "texto": "Vamos pra frente",
+            "autor": "Arthur Uguen",
+            "cargo": "Coordenador"
+        }
+    },
     "Desenvolvimento Sustentável": "Desenvolvimento Sustentável"
 }
