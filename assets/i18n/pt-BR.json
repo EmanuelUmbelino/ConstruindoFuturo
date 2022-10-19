@@ -1,0 +1,57 @@
+{
+    "Home": "Home",
+    "Sobre nós": "Sobre nós",
+    "Quem nós somos": "Quem nós somos",
+    "Nosso time": "Nosso time",
+    "Contato": "Contato",
+    "Faça parte": "Faça parte",
+    "Programa de Embaixadores": "Programa de Embaixadores",
+    "Comunidade": "Comunidade",
+    "Projetos": "Projetos",
+    "Visão": "Visão",
+    "Valores": "Valores",
+    "Missão": "Missão",
+    "home": {
+        "Adolescentes em prol do": "Adolescentes em prol do",
+        "Conheça o Projeto": "Conheça o Projeto",
+        "resumo-sobre": "O Construindo o Futuro é uma organização de adolescentes que desenvolvem projetos socioambientais para solucionar os problemas de suas comunidades.",
+        "Criações do CF": "Criações do CF",
+        "resumo-projetos": "O CF desenvolve projetos baseados nos Objetivos de Desenvolvimento Sustentável. Conheça as incríveis iniciativas implementadas pelos nossos voluntários!",
+        "resumo-visão": "Engajar líderes jovens de diferentes comunidades do Brasil e do mundo para se tornarem os verdadeiros agentes da mudança onde vivem e, assim, irem conquistando oportunidades e locais de fala.",
+        "resumo-missão": "Promover desenvolvimento sustentável em escolas e comunidades ao empoderar os jovens locais para que sejam verdadeiros agentes de mudança.",
+        "Participe de nossas embaixadas": "Participe de nossas embaixadas",
+        "resumo-embaixadas": "As embaixadas do CF são grupos de jovens que se juntam para trabalharem juntos em prol do desenvolvimento sustentável e das ODS da ONU em suas escolas, universidades, comunidades, cidades e regiões. As embaixadas do CF são formadas por: ",
+        "Pessoas Impactadas": "Pessoas Impactadas",
+        "Projetos Criados": "Projetos Criados",
+        "Membros CF": "Membros CF"
+    },
+    "valores": {
+        "protagonismo": "Protagonismo Jovem",
+        "comunidade": "Serviço à Comunidade",
+        "diversidade": "Respeito à Diversidade",
+        "integridade": "Integridade",
+        "vontade": "Boa Vontade",
+        "economico": "Crescimento Econômico Inclusivo e Sustentável"
+    },
+    "depoimentos": {
+        "1": {
+            "img": "assets/images/avatars/Juliana Janot.jpg",
+            "texto": "Desejo alegria e felicidades",
+            "autor": "Juliana Janot",
+            "cargo": "Diretora"
+        },
+        "2": {
+            "img": "assets/images/avatars/Julia Sawyer.jpg",
+            "texto": "Dias de luta, dias de glória",
+            "autor": "Julia Sawyer",
+            "cargo": "Diretora"
+        },
+        "3": {
+            "img": "assets/images/avatars/Arthur Uguen.jpg",
+            "texto": "Vamos pra frente",
+            "autor": "Arthur Uguen",
+            "cargo": "Coordenador"
+        }
+    },
+    "Desenvolvimento Sustentável": "Desenvolvimento Sustentável"
+}
