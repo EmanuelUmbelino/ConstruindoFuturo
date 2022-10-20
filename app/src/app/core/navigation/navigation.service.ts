@@ -56,7 +56,11 @@ export class NavigationService {
 
     translateTitle(item: FuseNavigationItem): void {
         if (item.title) {
-            item.title = this.translocoService.translate(item.title);
+            this.translocoService
+                .selectTranslate(item.title)
+                .subscribe((el) => {
+                    item.title = el;
+                });
         }
         if (item.children) {
             item.children.forEach((i: FuseNavigationItem) =>

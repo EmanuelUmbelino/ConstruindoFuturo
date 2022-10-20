@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { TranslocoService } from '@ngneat/transloco';
 
 @Component({
@@ -6,7 +6,7 @@ import { TranslocoService } from '@ngneat/transloco';
     templateUrl: './home.component.html',
     encapsulation: ViewEncapsulation.None,
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
     countOptions: any = {
         enableScrollSpy: true,
         scrollSpyOnce: true,
@@ -14,14 +14,16 @@ export class HomeComponent {
         duration: 3,
     };
 
-    depoimentos = Object.keys(this.translocoService.translateObject('depoimentos'));
+    depoimentos = Object.keys(
+        this.translocoService.translateObject('depoimentos')
+    );
 
     /**
      * Constructor
      */
-    constructor(private translocoService: TranslocoService) { }
+    constructor(private translocoService: TranslocoService) {}
 
-    ngOnInit() {
+    ngOnInit(): void {
         console.log('teste', this.depoimentos);
     }
 }
