@@ -14,6 +14,10 @@ export class HomeComponent implements OnInit {
         duration: 3,
     };
 
+    structure = Object.keys(
+        this.translocoService.translateObject('pages.Home')
+    );
+
     depoimentos = Object.keys(
         this.translocoService.translateObject('depoimentos')
     );
@@ -24,6 +28,27 @@ export class HomeComponent implements OnInit {
     constructor(private translocoService: TranslocoService) {}
 
     ngOnInit(): void {
-        console.log('teste', this.depoimentos);
+        console.log(
+            'teste',
+            this.structure,
+            this.translocoService.translateObject('pages.Home')
+        );
+    }
+
+    getImage(path): string {
+        if (path) {
+            return 'url(' + path + ')';
+        }
+        return '';
+    }
+
+    getClass(r): string {
+        let finalClass = '';
+        Object.keys(r).forEach((key) => {
+            if (r[key]) {
+                finalClass = finalClass + ' ' + key;
+            }
+        });
+        return finalClass;
     }
 }

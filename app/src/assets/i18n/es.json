@@ -1,19 +1,199 @@
 {
-    "Home": "Home",
-    "Sobre nós": "Sobre nosotros",
-    "Quem nós somos": "Who we are",
-    "Nosso time": "Nuestro euipo",
-    "Contato": "Contacto",
-    "Faça parte": "Participar",
-    "Programa de Embaixadores": "Programa de Embajadores",
-    "Comunidade": "Comunidad",
-    "Projetos": "Proyectos",
-    "home": {
-        "Adolescentes em prol do": "Adolescentes en nombre del",
-        "Conheça o Projeto": "Conoce el Proyecto",
-        "resumo-sobre": "El Construindo o Futuro es una organización de adolescentes que desarrollan proyectos socio ambientales para solucionar los problemas de sus comunidades.",
-        "Criações do CF": "Creaciones del CF",
-        "resumo-projetos": "El CF desarrolla proyectos basados en los Objetivos de Desarrollo Sostenible. ¡Conoce las increíbles iniciativas creadas por nuestros voluntarios!"
-    },
-    "Desenvolvimento Sustentável": "Desarrollo Sostenible"
+    "pages": {
+        "Home": [
+            {
+                "background": "/assets/images/photos/roda.jpg",
+                "alignment": "center",
+                "size": "main",
+                "structure": [
+                    {
+                        "type": "image",
+                        "image": "assets/images/logo/logo-white.svg",
+                        "size": "main"
+                    },
+                    {
+                        "type": "text",
+                        "text": "Adolescentes em prol do",
+                        "size": "main"
+                    },
+                    {
+                        "type": "text",
+                        "text": "Desenvolvimento Sustentável",
+                        "size": "main-2"
+                    }
+                ]
+            },
+            {
+                "alignment": "center",
+                "structure": [
+                    {
+                        "type": "text",
+                        "text": "O que é o CF",
+                        "size": "title"
+                    },
+                    {
+                        "type": "text",
+                        "text": "O Construindo o Futuro é uma organização de adolescentes que desenvolvem projetos socioambientais para solucionar os problemas de suas comunidades.",
+                        "size": "text"
+                    },
+                    {
+                        "type": "cards",
+                        "list": [
+                            {
+                                "structure": [
+                                    {
+                                        "type": "icon",
+                                        "icon": "feather:eye",
+                                        "color": "#3b82f6",
+                                        "size": "card-icon"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Visão",
+                                        "size": "title"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Engajar líderes jovens de diferentes comunidades do Brasil e do mundo para se tornarem os verdadeiros agentes da mudança onde vivem e, assim, irem conquistando oportunidades e locais de fala.",
+                                        "size": "text"
+                                    }
+                                ]
+                            },
+                            {
+                                "structure": [
+                                    {
+                                        "type": "icon",
+                                        "icon": "feather:heart",
+                                        "color": "#ef4444",
+                                        "size": "card-icon"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Valores",
+                                        "size": "title"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": " Protagonismo Jovem \n Serviço à Comunidade \n Respeito à Diversidade \n Integridade \n Boa Vontade \n Crescimento Econômico Inclusivo e Sustentável",
+                                        "size": "text"
+                                    }
+                                ]
+                            },
+                            {
+                                "structure": [
+                                    {
+                                        "type": "icon",
+                                        "icon": "feather:star",
+                                        "color": "#eab308",
+                                        "size": "card-icon"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Missão",
+                                        "size": "title"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Promover desenvolvimento sustentável em escolas e comunidades ao empoderar os jovens locais para que sejam verdadeiros agentes de mudança.",
+                                        "size": "text"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "background": "/assets/images/photos/camisa.jpg",
+                "alignment": "left",
+                "structure": [
+                    {
+                        "type": "text",
+                        "text": "Criações do CF",
+                        "size": "title"
+                    },
+                    {
+                        "type": "text",
+                        "text": "O CF desenvolve projetos baseados nos Objetivos de Desenvolvimento Sustentável. Conheça as incríveis iniciativas implementadas pelos nossos voluntários!",
+                        "size": "text"
+                    },
+                    {
+                        "type": "button",
+                        "text": "Projetos"
+                    }
+                ]
+            },
+            {
+                "alignment": "spaced",
+                "structure": [
+                    {
+                        "type": "impact-numbers",
+                        "list": [
+                            {
+                                "title": "Membros CF",
+                                "value": 400
+                            },
+                            {
+                                "title": "Pessoas Impactadas",
+                                "value": 6000
+                            },
+                            {
+                                "title": "Países",
+                                "value": 15
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "alignment": "spaced",
+                "join": "top",
+                "structure": [
+                    {
+                        "type": "depositions",
+                        "list": [
+                            {
+                                "img": "assets/images/avatars/Juliana Janot.jpg",
+                                "text": "Desejo alegria e felicidades",
+                                "author": "Juliana Janot",
+                                "role": "Diretora"
+                            },
+                            {
+                                "img": "assets/images/avatars/Julia Sawyer.jpg",
+                                "text": "Dias de luta, dias de glória",
+                                "author": "Julia Sawyer",
+                                "role": "Diretora"
+                            },
+                            {
+                                "img": "assets/images/avatars/Arthur Uguen.jpg",
+                                "text": "Vamos pra frente",
+                                "author": "Arthur Uguen",
+                                "role": "Coordenador"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "background": "/assets/images/photos/run.png",
+                "alignment": "left",
+                "structure": [
+                    {
+                        "type": "text",
+                        "text": "Participe de nossas embaixadas",
+                        "size": "title"
+                    },
+                    {
+                        "type": "text",
+                        "text": "As embaixadas do CF são grupos de jovens que se juntam para trabalharem juntos em prol do desenvolvimento sustentável e das ODS da ONU em suas escolas, universidades, comunidades, cidades e regiões. As embaixadas do CF são formadas por: ",
+                        "size": "text"
+                    },
+                    {
+                        "type": "button",
+                        "text": "Projetos"
+                    }
+                ]
+            }
+        ]
+    }
 }

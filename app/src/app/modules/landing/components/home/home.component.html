@@ -1,162 +1,209 @@
 <ng-container *transloco="let t">
     <div class="flex flex-col flex-auto w-full bg-slate-50">
-        <div class="absolute h-screen w-full bg-[url('/assets/images/photos/roda.jpg')] bg-left bg-cover brightness-50">
-        </div>
-        <div class="flex flex-col h-screen justify-center items-center px-10 text-center">
-            <img data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" class="w-30 sm:w-50 mb-20 z-0"
-                src="assets/images/logo/logo-white.svg" />
-            <div data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000"
-                class="text-white text-2xl sm:text-6xl font-medium z-0">
-                {{ t("home.Adolescentes em prol do") }}
-            </div>
-            <div data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000"
-                class="text-white text-4xl sm:text-6xl font-extrabold z-0">
-                {{ t("Desenvolvimento Sustentável") }}
-            </div>
-        </div>
-        <div class="">
-            <div class="flex flex-col justify-center items-center px-10 my-20">
-                <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"
-                    class="text-center sm:px-10 xl:w-2/3">
-                    <div class="text-4xl font-bold z-0">
-                        {{ t("home.Conheça o Projeto") }}
-                    </div>
-                    <div class="text-2xl font-light z-0">
-                        {{ t("home.resumo-sobre") }}
+        <ng-container *ngFor="let block of t('pages.Home')">
+            <ng-container *ngIf="block.size === 'main'">
+                <div
+                    [ngStyle]="{
+                        'background-image': getImage(block.background)
+                    }"
+                    class="absolute h-screen w-full bg-left bg-cover brightness-50"
+                ></div>
+                <div
+                    [ngClass]="
+                        getClass({
+                            'flex flex-col h-screen px-10': true,
+                            'justify-center items-center text-center':
+                                block.alignment === 'center'
+                        })
+                    "
+                >
+                    <ng-container *ngFor="let row of block.structure">
+                        <img
+                            *ngIf="row.type === 'image'"
+                            data-aos="fade-up"
+                            data-aos-delay="300"
+                            data-aos-duration="1000"
+                            class="w-30 sm:w-50 mb-20 z-0"
+                            [src]="row.image"
+                        />
+                        <div
+                            *ngIf="row.type === 'text'"
+                            data-aos="fade-up"
+                            data-aos-delay="700"
+                            data-aos-duration="1000"
+                            class="text-white z-0 text-4xl sm:text-6xl font-medium"
+                            [ngClass]="{
+                                'font-extrabold': row.size === 'main-2'
+                            }"
+                        >
+                            {{ row.text }}
+                        </div>
+                    </ng-container>
+                </div>
+            </ng-container>
+            <ng-container *ngIf="block.size !== 'main'">
+                <div
+                    [ngStyle]="{
+                        'background-image': getImage(block.background)
+                    }"
+                    [ngClass]="block.background ? 'bg-center' : ''"
+                >
+                    <div
+                        [ngClass]="
+                            getClass({
+                                'flex flex-row flex-wrap justify-center items-center px-10': true,
+                                'py-20': block.join === undefined,
+                                'pb-20': block.join === 'top',
+                                'pt-20': block.join === 'bottom',
+                                'backdrop-brightness-50 py-40': block.background
+                            })
+                        "
+                    >
+                        <div
+                            [ngClass]="
+                                getClass({
+                                    'pr-0 sm:pr-20 lg:pr-40 w-full sm:w-1/2 lg:w-2/5 z-0':
+                                        block.alignment === 'left',
+                                    'flex flex-col justify-center items-center':
+                                        block.alignment === 'center',
+                                    'flex flex-1 flex-wrap justify-center px-10 lg:px-40':
+                                        block.alignment === 'spaced'
+                                })
+                            "
+                        >
+                            <ng-container *ngFor="let row of block.structure">
+                                <!-- TEXT -->
+                                <div
+                                    *ngIf="row.type === 'text'"
+                                    data-aos="fade-up"
+                                    data-aos-once="true"
+                                    [ngClass]="{
+                                        'text-4xl font-bold':
+                                            row.size === 'title',
+                                        'text-2xl font-light':
+                                            row.size === 'text',
+                                        'text-white': block.background
+                                    }"
+                                >
+                                    {{ row.text }}
+                                </div>
+                                <!-- BUTTON -->
+                                <button
+                                    *ngIf="row.type === 'button'"
+                                    mat-stroked-button
+                                    class="mt-3 text-white"
+                                    [ngClass]="{
+                                        'text-white': block.background
+                                    }"
+                                >
+                                    <mat-icon
+                                        svgIcon="arrow_right"
+                                        [ngClass]="{
+                                            'text-white': block.background
+                                        }"
+                                    ></mat-icon>
+                                    {{ row.text }}
+                                </button>
+                                <!-- CARD LIST -->
+                                <div
+                                    *ngIf="row.type === 'cards'"
+                                    class="flex flex-row flex-wrap justify-center pt-10"
+                                >
+                                    <fuse-card
+                                        *ngFor="let card of row.list"
+                                        data-aos="flip-up"
+                                        data-aos-once="true"
+                                        data-aos-anchor-placement="bottom-bottom"
+                                        class="flex flex-col items-center max-w-80 w-full p-8 drop-shadow-sm hover:drop-shadow-xl transition duration-500 m-4"
+                                    >
+                                        <ng-container
+                                            *ngFor="
+                                                let cardRow of card.structure
+                                            "
+                                        >
+                                            <mat-icon
+                                                *ngIf="cardRow.type === 'icon'"
+                                                class="icon-size-16 drop-shadow-lg opacity-80 mb-5"
+                                                [ngStyle]="{
+                                                    color: cardRow.color
+                                                }"
+                                                [svgIcon]="cardRow.icon"
+                                            >
+                                            </mat-icon>
+                                            <div
+                                                *ngIf="cardRow.type === 'text'"
+                                                class="text-center whitespace-pre-wrap"
+                                                [ngClass]="{
+                                                    'text-2xl font-semibold leading-tight':
+                                                        cardRow.size ===
+                                                        'title',
+                                                    'text-secondary':
+                                                        cardRow.size === 'text'
+                                                }"
+                                            >
+                                                {{ cardRow.text }}
+                                            </div>
+                                        </ng-container>
+                                    </fuse-card>
+                                </div>
+                                <!-- IMPACT NUMBERS -->
+                                <ng-container
+                                    *ngIf="row.type === 'impact-numbers'"
+                                >
+                                    <div
+                                        class="text-center flex-1 p-10"
+                                        *ngFor="let number of row.list"
+                                    >
+                                        <div
+                                            class="text-9xl font-bold z-0 text-amber-400"
+                                        >
+                                            <span
+                                                [countUp]="number.value"
+                                                [options]="countOptions"
+                                            ></span>
+                                        </div>
+                                        <div class="text-3xl font-light z-0">
+                                            {{ number.title }}
+                                        </div>
+                                    </div>
+                                </ng-container>
+                                <!-- DEPOSITIONS -->
+                                <ng-container
+                                    *ngIf="row.type === 'depositions'"
+                                >
+                                    <fuse-card
+                                        class="flex flex-col md:flex-row max-w-80 md:max-w-160 w-full m-5 transition hover:drop-shadow-xl"
+                                        *ngFor="let dep of row.list"
+                                    >
+                                        <div class="flex-0 w-80 md:w-32">
+                                            <img
+                                                [src]="dep.img"
+                                                class="w-full h-full object-cover"
+                                            />
+                                        </div>
+                                        <div
+                                            class="flex flex-col flex-auto m-8"
+                                        >
+                                            <div
+                                                class="text-lg italic leading-relaxed"
+                                            >
+                                                {{ dep.text }}
+                                            </div>
+                                            <div
+                                                class="text-md font-medium text-primary mt-4"
+                                            >
+                                                —
+                                                {{ dep.author }},
+                                                {{ dep.role }}
+                                            </div>
+                                        </div>
+                                    </fuse-card>
+                                </ng-container>
+                            </ng-container>
+                        </div>
                     </div>
                 </div>
-                <div class="flex flex-row flex-wrap justify-center pt-10">
-                    <fuse-card data-aos="flip-left" data-aos-anchor-placement="top-center" data-aos-once="true"
-                        class="flex flex-col items-center max-w-80 w-full p-8 drop-shadow-sm hover:drop-shadow-xl transition duration-500 m-4">
-                        <mat-icon class="icon-size-16 text-blue-500 drop-shadow-lg opacity-80" svgIcon="feather:eye">
-                        </mat-icon>
-                        <div class="text-2xl font-semibold leading-tight text-center mt-6">
-                            {{ t("Visão") }}
-                        </div>
-                        <div class="text-center text-secondary mt-1 mb-8">
-                            {{ t("home.resumo-visão") }}
-                        </div>
-                    </fuse-card>
-                    <fuse-card data-aos="flip-up" data-aos-anchor-placement="top-center" data-aos-once="true"
-                        class="flex flex-col items-center max-w-80 w-full p-8 drop-shadow-sm hover:drop-shadow-xl transition duration-500 m-4">
-                        <mat-icon class="icon-size-16 text-red-500 drop-shadow-lg opacity-80" svgIcon="feather:heart">
-                        </mat-icon>
-                        <div class="text-2xl font-semibold leading-tight text-center mt-6">
-                            {{ t("Valores") }}
-                        </div>
-                        <div class="text-center text-secondary mt-1 mb-8">
-                            {{ t("valores.protagonismo") }}
-                            <br />
-                            {{ t("valores.comunidade") }}
-                            <br />
-                            {{ t("valores.diversidade") }}
-                            <br />
-                            {{ t("valores.integridade") }}
-                            <br />
-                            {{ t("valores.vontade") }}
-                            <br />
-                            {{ t("valores.economico") }}
-                        </div>
-                    </fuse-card>
-                    <fuse-card data-aos="flip-right" data-aos-anchor-placement="top-center" data-aos-once="true"
-                        class="flex flex-col items-center max-w-80 w-full p-8 drop-shadow-sm hover:drop-shadow-xl transition duration-500 m-4">
-                        <mat-icon class="icon-size-16 text-yellow-500 drop-shadow-lg opacity-80" svgIcon="feather:star">
-                        </mat-icon>
-                        <div class="text-2xl font-semibold leading-tight text-center mt-6">
-                            {{ t("Missão") }}
-                        </div>
-                        <div class="text-center text-secondary mt-1 mb-8">
-                            {{ t("home.resumo-missão") }}
-                        </div>
-                    </fuse-card>
-                </div>
-                <button mat-stroked-button color="primary" class="mt-3">
-                    <mat-icon svgIcon="arrow_right"></mat-icon>
-                    {{ t("Sobre nós") }}
-                </button>
-            </div>
-        </div>
-        <div class="bg-[url('/assets/images/photos/camisa.jpg')] bg-center">
-            <div class="flex flex-row flex-wrap justify-center items-center px-10 py-40 backdrop-brightness-50">
-                <div class="pr-0 sm:pr-20 lg:pr-40 w-full sm:w-1/2 lg:w-2/5 z-0">
-                    <div data-aos="fade-right" data-aos-once="true" class="text-white text-4xl font-bold">
-                        {{ t("home.Criações do CF") }}
-                    </div>
-                    <div data-aos="fade-right" data-aos-once="true" class="text-white text-2xl font-light">
-                        {{ t("home.resumo-projetos") }}
-                    </div>
-                    <button mat-stroked-button class="mt-3 text-white">
-                        <mat-icon svgIcon="arrow_right" class="text-white"></mat-icon>
-                        {{ t("Projetos") }}
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="">
-            <div class="flex flex-wrap lg:px-40 justify-center px-10 mt-20">
-                <div class="text-center flex-1 p-10">
-                    <div class="text-9xl font-bold z-0 text-amber-400">
-                        <span [countUp]="300" [options]="countOptions"></span>
-                    </div>
-                    <div class="text-3xl font-light z-0">
-                        {{ t("home.Projetos Criados") }}
-                    </div>
-                </div>
-                <div class="text-center flex-1 p-10">
-                    <div class="text-9xl font-bold z-0 text-amber-400">
-                        <span [countUp]="10000" [options]="countOptions"></span>
-                    </div>
-                    <div class="text-3xl font-light z-0">
-                        {{ t("home.Pessoas Impactadas") }}
-                    </div>
-                </div>
-                <div class="text-center flex-1 p-10">
-                    <div class="text-9xl font-bold z-0 text-amber-400">
-                        <span [countUp]="45" [options]="countOptions"></span>
-                    </div>
-                    <div class="text-3xl font-light z-0">
-                        {{ t("home.Membros CF") }}
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="">
-            <div class="flex flex-wrap lg:px-40 justify-center px-10 mb-20 mt-10">
-                <fuse-card
-                    class="flex flex-col md:flex-row max-w-80 md:max-w-160 w-full m-5 transition hover:drop-shadow-xl"
-                    *ngFor="let dep of depoimentos">
-                    <div class="flex-0 w-80 md:w-32">
-                        <img [src]="t('depoimentos.'+dep+'.img')" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flex flex-col flex-auto m-8">
-                        <div class="text-lg italic leading-relaxed">
-                            {{ t('depoimentos.'+dep+'.texto') }}
-                        </div>
-                        <div class="text-md font-medium text-primary mt-4">
-                            — {{ t('depoimentos.'+dep+'.autor') }}, {{ t('depoimentos.'+dep+'.cargo') }}
-                        </div>
-                    </div>
-                </fuse-card>
-            </div>
-        </div>
-        <div class="bg-[url('/assets/images/photos/run.png')] bg-center">
-            <div class="flex flex-row flex-wrap justify-center items-center px-10 py-40 backdrop-brightness-50">
-                <div class="pr-0 sm:pr-20 lg:pr-40 w-full sm:w-1/2 lg:w-2/5 z-0">
-                    <div data-aos="fade-left" data-aos-once="true" class="text-white text-4xl font-bold">
-                        {{ t("home.Participe de nossas embaixadas") }}
-                    </div>
-                    <div data-aos="fade-left" data-aos-once="true" class="text-white text-2xl font-light">
-                        {{ t("home.resumo-embaixadas") }}
-                    </div>
-                    <button mat-stroked-button class="mt-3 text-white">
-                        <mat-icon svgIcon="arrow_right" class="text-white"></mat-icon>
-                        {{ t("Projetos") }}
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="">
-            <div></div>
-        </div>
+            </ng-container>
+        </ng-container>
     </div>
 </ng-container>
