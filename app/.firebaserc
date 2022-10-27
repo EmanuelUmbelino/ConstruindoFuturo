@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "construindo-o-futuro-2b76c": {
+      "hosting": {
+        "fuse": [
+          "construindo-o-futuro-2b76c"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "construindo-o-futuro-2b76c"
+  }
+}
