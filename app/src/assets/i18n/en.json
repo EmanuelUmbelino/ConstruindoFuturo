@@ -40,6 +40,7 @@
                         "type": "cards",
                         "list": [
                             {
+                                "type": "icon",
                                 "structure": [
                                     {
                                         "type": "icon",
@@ -60,6 +61,7 @@
                                 ]
                             },
                             {
+                                "type": "icon",
                                 "structure": [
                                     {
                                         "type": "icon",
@@ -80,6 +82,7 @@
                                 ]
                             },
                             {
+                                "type": "icon",
                                 "structure": [
                                     {
                                         "type": "icon",
