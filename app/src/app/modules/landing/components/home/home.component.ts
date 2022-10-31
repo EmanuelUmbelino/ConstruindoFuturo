@@ -14,14 +14,6 @@ export class HomeComponent implements OnInit {
         duration: 3,
     };
 
-    structure = Object.keys(
-        this.translocoService.translateObject('pages.Home')
-    );
-
-    depoimentos = Object.keys(
-        this.translocoService.translateObject('depoimentos')
-    );
-
     /**
      * Constructor
      */
@@ -30,7 +22,6 @@ export class HomeComponent implements OnInit {
     ngOnInit(): void {
         console.log(
             'teste',
-            this.structure,
             this.translocoService.translateObject('pages.Home')
         );
     }

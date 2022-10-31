@@ -13,12 +13,12 @@
                     },
                     {
                         "type": "text",
-                        "text": "Adolescentes em prol do",
+                        "text": "Teenagers for",
                         "size": "main"
                     },
                     {
                         "type": "text",
-                        "text": "Desenvolvimento Sustentável",
+                        "text": "Sustainable Development",
                         "size": "main-2"
                     }
                 ]
@@ -28,12 +28,12 @@
                 "structure": [
                     {
                         "type": "text",
-                        "text": "O que é o CF",
+                        "text": "What is CF",
                         "size": "title"
                     },
                     {
                         "type": "text",
-                        "text": "O Construindo o Futuro é uma organização de adolescentes que desenvolvem projetos socioambientais para solucionar os problemas de suas comunidades.",
+                        "text": "Construindo o Futuro is an organization of teenagers who develop social and environmental projects to solve the problems of their communities",
                         "size": "text"
                     },
                     {
@@ -49,12 +49,12 @@
                                     },
                                     {
                                         "type": "text",
-                                        "text": "Visão",
+                                        "text": "Vision",
                                         "size": "title"
                                     },
                                     {
                                         "type": "text",
-                                        "text": "Engajar líderes jovens de diferentes comunidades do Brasil e do mundo para se tornarem os verdadeiros agentes da mudança onde vivem e, assim, irem conquistando oportunidades e locais de fala.",
+                                        "text": "Engage young leaders from different communities in Brazil and around the world to become true agents of change where they live and, thus, conquer opportunities and places of speech.",
                                         "size": "text"
                                     }
                                 ]
@@ -69,12 +69,12 @@
                                     },
                                     {
                                         "type": "text",
-                                        "text": "Valores",
+                                        "text": "Values",
                                         "size": "title"
                                     },
                                     {
                                         "type": "text",
-                                        "text": " Protagonismo Jovem \n Serviço à Comunidade \n Respeito à Diversidade \n Integridade \n Boa Vontade \n Crescimento Econômico Inclusivo e Sustentável",
+                                        "text": " Youth protagonism \n Community service \n Respect for diversity \n Integrity \n Goodwill \n Inclusive and sustainable economic growth.",
                                         "size": "text"
                                     }
                                 ]
@@ -89,12 +89,12 @@
                                     },
                                     {
                                         "type": "text",
-                                        "text": "Missão",
+                                        "text": "Mission",
                                         "size": "title"
                                     },
                                     {
                                         "type": "text",
-                                        "text": "Promover desenvolvimento sustentável em escolas e comunidades ao empoderar os jovens locais para que sejam verdadeiros agentes de mudança.",
+                                        "text": "Is to promote sustainable development in every school and community by connecting and empowering local youth to be real change-makers.",
                                         "size": "text"
                                     }
                                 ]
@@ -109,12 +109,12 @@
                 "structure": [
                     {
                         "type": "text",
-                        "text": "Criações do CF",
+                        "text": "CF Creations",
                         "size": "title"
                     },
                     {
                         "type": "text",
-                        "text": "O CF desenvolve projetos baseados nos Objetivos de Desenvolvimento Sustentável. Conheça as incríveis iniciativas implementadas pelos nossos voluntários!",
+                        "text": "We develop projects based on the United Nations Sustainable Development Goals. Get to know the initiatives implemented by our volunteers",
                         "size": "text"
                     },
                     {
@@ -130,15 +130,16 @@
                         "type": "impact-numbers",
                         "list": [
                             {
-                                "title": "Membros CF",
+                                "title": "CF Members",
+                                "plus": true,
                                 "value": 400
                             },
                             {
-                                "title": "Pessoas Impactadas",
+                                "title": "People Impacted",
                                 "value": 6000
                             },
                             {
-                                "title": "Países",
+                                "title": "Countries",
                                 "value": 15
                             }
                         ]
@@ -153,22 +154,34 @@
                         "type": "depositions",
                         "list": [
                             {
-                                "img": "assets/images/avatars/Juliana Janot.jpg",
-                                "text": "Desejo alegria e felicidades",
-                                "author": "Juliana Janot",
-                                "role": "Diretora"
+                                "img": "assets/images/avatars/Marcos Gabriel.jpg",
+                                "text": "CF exceeded all my expectations. Here I could meet and learn with new people from different cultures and places. I learned that I can do something to change my surroundings and I will carry the knowledge I gained here for the rest of my life. CF has turned me into an agent of change!",
+                                "author": "Marcos Gabriel Maiah",
+                                "role": "Embaixador do CF no Ciclo 2021, em Imaculada (PB)"
                             },
                             {
-                                "img": "assets/images/avatars/Julia Sawyer.jpg",
-                                "text": "Dias de luta, dias de glória",
-                                "author": "Julia Sawyer",
-                                "role": "Diretora"
+                                "img": "assets/images/avatars/Lyandra Zamboni.jpg",
+                                "text": "My experience at the CF Bootcamp was fantastic. I hope that many more young people will have the opportunity to participate in it and realize how much our world needs to change and that we, young people, can be active in this change! I carry in my heart everything I learned and every extraordinary person I met on this journey. Now I know that I am not alone in my will to make a difference!",
+                                "author": "Lyandra Zamboni",
+                                "role": "Embaixadora do CF no Ciclo 2021, em Jaborandi (SP)"
                             },
                             {
-                                "img": "assets/images/avatars/Arthur Uguen.jpg",
-                                "text": "Vamos pra frente",
-                                "author": "Arthur Uguen",
-                                "role": "Coordenador"
+                                "img": "assets/images/avatars/Rosalinda Rodrigues.jpg",
+                                "text": "I am very grateful to CF for having received me so well. Hearing about the experiences of people from all over the world making a difference touched me so deeply and brought me hope. There are no words to describe how much I grew thanks to CF!",
+                                "author": "Rosalinda Rodrigues",
+                                "role": "Coordenadora do CF no Ciclo 2022, em Manaus (AM)"
+                            },
+                            {
+                                "img": "assets/images/avatars/Marina Pacheco.jpg",
+                                "text": "I've always been very shy and never had many friends, so I was usually not heard when I talked to people about socio-environmental issues. However, at CF I found people who not only care about the same causes as I do, but I found a space where I am heard and can be myself",
+                                "author": "Marina Pacheco",
+                                "role": "Embaixadora do CF no Colégio pH Botafogo (Rio de Janeiro)"
+                            },
+                            {
+                                "img": "assets/images/avatars/Lyandra Zamboni.jpg",
+                                "text": "I am delighted to be founding one of CF's first embassies in Mexico. CF has been a fantastic opportunity not only for me to create change and learn to be a leader in my own community but to meet people from all over the world and create a space where we all feel supported and can share our experiences.",
+                                "author": "Karina Castañeda Tellez",
+                                "role": "CF Ambassador in Mexico (embasssy Sentinella Mx Salud Mental)"
                             }
                         ]
                     }
@@ -180,17 +193,17 @@
                 "structure": [
                     {
                         "type": "text",
-                        "text": "Participe de nossas embaixadas",
+                        "text": "Join our embassies",
                         "size": "title"
                     },
                     {
                         "type": "text",
-                        "text": "As embaixadas do CF são grupos de jovens que se juntam para trabalharem juntos em prol do desenvolvimento sustentável e das ODS da ONU em suas escolas, universidades, comunidades, cidades e regiões. As embaixadas do CF são formadas por: ",
+                        "text": "CF embassies are groups of young people who come together to work together towards sustainable development and the UN SDGs in their schools, universities, communities, cities and regions.",
                         "size": "text"
                     },
                     {
                         "type": "button",
-                        "text": "Projetos"
+                        "text": "Projects"
                     }
                 ]
             }
