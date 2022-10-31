@@ -169,35 +169,77 @@
                                     </div>
                                 </ng-container>
                                 <!-- DEPOSITIONS -->
-                                <ng-container
+                                <div
                                     *ngIf="row.type === 'depositions'"
+                                    class="flex"
                                 >
-                                    <fuse-card
-                                        class="flex flex-col md:flex-row items-center justify-between max-w-80 md:max-w-160 w-full p-8 my-5 sm:mx-5 transition hover:drop-shadow-xl"
-                                        *ngFor="let dep of row.list"
+                                    <button
+                                        class="mt-44"
+                                        mat-icon-button
+                                        (click)="
+                                            tabs.selectedIndex =
+                                                (row.list.length +
+                                                    ((tabs.selectedIndex - 1) %
+                                                        12)) %
+                                                row.list.length
+                                        "
                                     >
-                                        <img
-                                            [src]="dep.img"
-                                            class="w-40 md:mr-8 mb-8 md:mb-0 rounded-full object-cover"
-                                        />
-                                        <div
-                                            class="flex flex-col flex-auto justify-center prose"
+                                        <mat-icon
+                                            svgIcon="heroicons_outline:chevron-left"
+                                        ></mat-icon>
+                                    </button>
+                                    <mat-tab-group
+                                        class="tab-no-header"
+                                        #tabs
+                                        dynamicHeight
+                                        mat-align-tabs="center"
+                                    >
+                                        <mat-tab
+                                            *ngFor="
+                                                let dep of row.list;
+                                                let i = index
+                                            "
                                         >
-                                            <div
-                                                class="text-lg italic leading-relaxed whitespace-pre-wrap text-justify"
+                                            <fuse-card
+                                                class="flex flex-col md:flex-row items-center justify-between max-w-80 md:max-w-160 w-full p-8 my-5 sm:mx-5 transition hover:drop-shadow-xl"
                                             >
-                                                {{ dep.text }}
-                                            </div>
-                                            <div
-                                                class="text-md font-medium text-primary mt-4"
-                                            >
-                                                {{ dep.author }},
-                                                <br />
-                                                {{ dep.role }}
-                                            </div>
-                                        </div>
-                                    </fuse-card>
-                                </ng-container>
+                                                <img
+                                                    [src]="dep.img"
+                                                    class="w-40 md:mr-8 mb-8 md:mb-0 rounded-full object-cover"
+                                                />
+                                                <div
+                                                    class="flex flex-col flex-auto justify-center prose"
+                                                >
+                                                    <div
+                                                        class="text-lg italic leading-relaxed whitespace-pre-wrap"
+                                                    >
+                                                        {{ dep.text }}
+                                                    </div>
+                                                    <div
+                                                        class="text-md font-medium text-primary mt-4"
+                                                    >
+                                                        {{ dep.author }},
+                                                        <br />
+                                                        {{ dep.role }}
+                                                    </div>
+                                                </div>
+                                            </fuse-card>
+                                        </mat-tab>
+                                    </mat-tab-group>
+                                    <button
+                                        class="mt-44"
+                                        mat-icon-button
+                                        (click)="
+                                            tabs.selectedIndex =
+                                                (tabs.selectedIndex + 1) %
+                                                row.list.length
+                                        "
+                                    >
+                                        <mat-icon
+                                            svgIcon="heroicons_outline:chevron-right"
+                                        ></mat-icon>
+                                    </button>
+                                </div>
                             </ng-container>
                         </div>
                     </div>

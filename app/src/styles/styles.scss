@@ -10,3 +10,12 @@
     -webkit-mask: url(/assets/images/logo/logo-black.svg) no-repeat center /
         contain;
 }
+
+.tab-no-header {
+    .mat-tab-body-content {
+        padding: 0 !important;
+    }
+    .mat-tab-header {
+        display: none !important;
+    }
+}

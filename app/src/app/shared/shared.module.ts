@@ -5,6 +5,7 @@ import { TranslocoModule } from '@ngneat/transloco';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTabsModule } from '@angular/material/tabs';
 import { FuseCardModule } from '@fuse/components/card';
 import { CountUpModule } from 'ngx-countup';
 
@@ -18,6 +19,7 @@ import { CountUpModule } from 'ngx-countup';
 
         MatButtonModule,
         MatIconModule,
+        MatTabsModule,
         FuseCardModule,
         CountUpModule,
     ],
