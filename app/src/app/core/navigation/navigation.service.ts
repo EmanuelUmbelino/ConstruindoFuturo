@@ -57,7 +57,7 @@ export class NavigationService {
     translateTitle(item: FuseNavigationItem): void {
         if (item.title) {
             this.translocoService
-                .selectTranslate(item.title)
+                .selectTranslate('navigation.' + item.title)
                 .subscribe((el) => {
                     item.title = el;
                 });

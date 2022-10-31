@@ -40,6 +40,7 @@
                         "type": "cards",
                         "list": [
                             {
+                                "type": "icon",
                                 "structure": [
                                     {
                                         "type": "icon",
@@ -60,6 +61,7 @@
                                 ]
                             },
                             {
+                                "type": "icon",
                                 "structure": [
                                     {
                                         "type": "icon",
@@ -80,6 +82,7 @@
                                 ]
                             },
                             {
+                                "type": "icon",
                                 "structure": [
                                     {
                                         "type": "icon",
@@ -206,7 +209,48 @@
                         "text": "Projetos"
                     }
                 ]
+            },
+            {
+                "alignment": "center",
+                "structure": [
+                    {
+                        "type": "text",
+                        "text": "CF nas mídias",
+                        "size": "title"
+                    },
+                    {
+                        "type": "cards",
+                        "list": [
+                            {
+                                "type": "article",
+                                "image": "/assets/images/photos/Juliana-Jannot_1.jpg",
+                                "title": "Adolescente que aos 14 anos fez campanha para ajudar refugiados venezuelanos concorre a prêmio",
+                                "subtitle": "Texto publicado pelo Jornal O Globo - Dezembro de 2020",
+                                "button": "Ler mais",
+                                "link": "https://oglobo.globo.com/rio/bairros/adolescente-que-aos-14-anos-fez-campanha-para-ajudar-refugiados-venezuelanos-concorre-premio-24799895"
+                            },
+                            {
+                                "type": "article",
+                                "image": "/assets/images/photos/cropped-REVISTA-FRAUDE-MARCA-op-1-1024x700-1.webp",
+                                "title": "Conheça adolescentes que se organizam e lutam para defender causas sociais",
+                                "subtitle": "Texto publicado pela Revista Fraude, da UFBA - Julho de 2021",
+                                "button": "Ler mais",
+                                "link": "https://www.revistafraude.ufba.br/novafraude/jovem-pega-a-visao/"
+                            }
+                        ]
+                    }
+                ]
             }
         ]
+    },
+    "navigation": {
+        "Home": "Home",
+        "Sobre nós": "Sobre nós",
+        "Quem nós somos": "Quem nós somos",
+        "Nosso time": "Nosso time",
+        "Contato": "Contato",
+        "Faça parte": "Faça parte",
+        "Programa de Embaixadores": "Programa de Embaixadores",
+        "Comunidade": "Comunidade"
     }
 }

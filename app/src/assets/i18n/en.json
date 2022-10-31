@@ -206,7 +206,48 @@
                         "text": "Projects"
                     }
                 ]
+            },
+            {
+                "alignment": "center",
+                "structure": [
+                    {
+                        "type": "text",
+                        "text": "CF in the media",
+                        "size": "title"
+                    },
+                    {
+                        "type": "cards",
+                        "list": [
+                            {
+                                "type": "article",
+                                "image": "/assets/images/photos/Juliana-Jannot_1.jpg",
+                                "title": "Teenager who at age 14 campaigned to help Venezuelan refugees competes for award",
+                                "subtitle": "Text published by Jornal O Globo - December 2020",
+                                "button": "Read more",
+                                "link": "https://oglobo.globo.com/rio/bairros/adolescente-que-aos-14-anos-fez-campanha-para-ajudar-refugiados-venezuelanos-concorre-premio-24799895"
+                            },
+                            {
+                                "type": "article",
+                                "image": "/assets/images/photos/cropped-REVISTA-FRAUDE-MARCA-op-1-1024x700-1.webp",
+                                "title": "Meet teenagers who organize and fight to defend social causes",
+                                "subtitle": "Text published by Revista Fraude, from UFBA - July 2021",
+                                "button": "Read more",
+                                "link": "https://www.revistafraude.ufba.br/novafraude/jovem-pega-a-visao/"
+                            }
+                        ]
+                    }
+                ]
             }
         ]
+    },
+    "navigation": {
+        "Home": "Home",
+        "Sobre nós": "About us",
+        "Quem nós somos": "Who we are",
+        "Nosso time": "Our team",
+        "Contato": "Contact",
+        "Faça parte": "Take part",
+        "Programa de Embaixadores": "Ambassador Program",
+        "Comunidade": "Community"
     }
 }
