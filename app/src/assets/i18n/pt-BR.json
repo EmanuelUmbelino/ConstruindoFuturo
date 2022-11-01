@@ -55,7 +55,7 @@
                                     },
                                     {
                                         "type": "text",
-                                        "text": "Engajar líderes jovens de diferentes comunidades do Brasil e do mundo para se tornarem os verdadeiros agentes da mudança onde vivem e, assim, irem conquistando oportunidades e locais de fala.",
+                                        "text": "Estabelecer embaixadas em diferentes comunidades do Brasil e do mundo, fortalecendo uma geração de jovens líderes que coletivamente mudam o seu entorno.",
                                         "size": "text"
                                     }
                                 ]
@@ -140,6 +140,10 @@
                             {
                                 "title": "Pessoas Impactadas",
                                 "value": 6000
+                            },
+                            {
+                                "title": "Estados Brasileiros",
+                                "value": 15
                             },
                             {
                                 "title": "Países",
