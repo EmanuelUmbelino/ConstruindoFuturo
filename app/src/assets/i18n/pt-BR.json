@@ -223,23 +223,29 @@
                         "size": "title"
                     },
                     {
-                        "type": "cards",
+                        "type": "logos",
                         "list": [
                             {
-                                "type": "article",
-                                "image": "/assets/images/photos/Juliana-Jannot_1.jpg",
-                                "title": "Adolescente que aos 14 anos fez campanha para ajudar refugiados venezuelanos concorre a prêmio",
-                                "subtitle": "Texto publicado pelo Jornal O Globo - Dezembro de 2020",
-                                "button": "Ler mais",
+                                "image": "/assets/images/photos/globo.png",
+                                "text": "A organização Construindo o Futuro (CF) visa a estimular adolescentes a atuarem na transformação de suas comunidades por meio de projetos socioambientais e já auxiliou mais de quatro mil pessoas.",
                                 "link": "https://oglobo.globo.com/rio/bairros/adolescente-que-aos-14-anos-fez-campanha-para-ajudar-refugiados-venezuelanos-concorre-premio-24799895"
                             },
                             {
+                                "image": "/assets/images/photos/lala.svg",
+                                "text": "Atualmente, a iniciativa trabalha com a criação de embaixadas, grupos de jovens que criam projetos sociais e ambientais para resolver os problemas de suas comunidades.",
+                                "link": "https://latinamericanleadershipacademy.org/pt-br/lala-is-a-milestone-in-my-life/"
+                            },
+                            {
                                 "type": "article",
-                                "image": "/assets/images/photos/cropped-REVISTA-FRAUDE-MARCA-op-1-1024x700-1.webp",
-                                "title": "Conheça adolescentes que se organizam e lutam para defender causas sociais",
-                                "subtitle": "Texto publicado pela Revista Fraude, da UFBA - Julho de 2021",
-                                "button": "Ler mais",
+                                "image": "/assets/images/photos/fraude.webp",
+                                "text": "A Organização é inteiramente de jovens que buscam o desenvolvimento sustentável através de palestras nas escolas e campanhas de conscientização.",
                                 "link": "https://www.revistafraude.ufba.br/novafraude/jovem-pega-a-visao/"
+                            },
+                            {
+                                "type": "article",
+                                "image": "/assets/images/photos/observatorio3setor-3.png",
+                                "text": "Construindo o Futuro, uma organização internacional que já impactou mais de 5.500 pessoas ao empoderar adolescentes para transformarem suas comunidades através de projetos socioambientais.",
+                                "link": "https://observatorio3setor.org.br/noticias/marina-pechlivanis-realiza-5a-live-sobre-gentileza-e-generosidade/"
                             }
                         ]
                     }

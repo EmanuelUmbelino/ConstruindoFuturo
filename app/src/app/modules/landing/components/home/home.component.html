@@ -292,6 +292,40 @@
                                         ></mat-icon>
                                     </button>
                                 </div>
+                                <div
+                                    *ngIf="row.type === 'logos'"
+                                    class="flex items-center flex-wrap justify-center"
+                                >
+                                    <div
+                                        *ngFor="let logo of row.list"
+                                        class="flex items-center px-3"
+                                    >
+                                        <a
+                                            class="flex items-center hover:shadow hover:bg-white transition duration-500 p-3 rounded-xl cursor-pointer flex-wrap justify-center"
+                                            [href]="logo.link"
+                                            target="_blank"
+                                        >
+                                            <div class="w-64 pr-5">
+                                                <img [src]="logo.image" />
+                                            </div>
+                                            <div
+                                                class="relative flex flex-col max-w-80 w-full"
+                                            >
+                                                <span
+                                                    class="absolute top-0 left-0 text-9xl font-serif text-primary leading-none"
+                                                >
+                                                    “
+                                                </span>
+                                                <div
+                                                    class="text-lg italic leading-relaxed mt-4"
+                                                >
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    {{ logo.text }}
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
                             </ng-container>
                         </div>
                     </div>
