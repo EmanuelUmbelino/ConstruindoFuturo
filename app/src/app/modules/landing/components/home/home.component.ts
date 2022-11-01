@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { TranslocoService } from '@ngneat/transloco';
+import { SwiperOptions } from 'swiper';
 
 @Component({
     selector: 'home-app',
@@ -12,6 +13,19 @@ export class HomeComponent implements OnInit {
         scrollSpyOnce: true,
         scrollSpyDelay: 200,
         duration: 3,
+    };
+
+    config: SwiperOptions = {
+        slidesPerView: 'auto',
+        spaceBetween: 40,
+        loop: true,
+        centeredSlides: true,
+        pagination: { clickable: true },
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
     };
 
     /**

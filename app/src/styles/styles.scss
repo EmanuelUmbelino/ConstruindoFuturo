@@ -4,6 +4,11 @@
 /* ----------------------------------------------------------------------------------------------------- */
 @import "~aos/dist/aos.css";
 
+@import "~swiper/css";
+@import "~swiper/css/navigation";
+@import "~swiper/css/pagination";
+@import "~swiper/css/autoplay";
+
 .icon-stroke {
     background-color: rgb(100, 116, 139);
     mask: url(/assets/images/logo/logo-black.svg) no-repeat center / contain;

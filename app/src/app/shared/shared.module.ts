@@ -8,6 +8,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
 import { FuseCardModule } from '@fuse/components/card';
 import { CountUpModule } from 'ngx-countup';
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
     imports: [CommonModule, FormsModule, ReactiveFormsModule, TranslocoModule],
@@ -22,6 +23,7 @@ import { CountUpModule } from 'ngx-countup';
         MatTabsModule,
         FuseCardModule,
         CountUpModule,
+        SwiperModule,
     ],
 })
 export class SharedModule {}

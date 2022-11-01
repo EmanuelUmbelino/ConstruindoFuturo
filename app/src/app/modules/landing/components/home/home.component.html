@@ -51,7 +51,7 @@
                     <div
                         [ngClass]="
                             getClass({
-                                'flex flex-row flex-wrap justify-center items-center px-10': true,
+                                'flex flex-row flex-wrap justify-center items-center px-10  overflow-hidden': true,
                                 'py-20': block.join === undefined,
                                 'pb-20': block.join === 'top',
                                 'pt-20': block.join === 'bottom',
@@ -62,6 +62,7 @@
                         <div
                             [ngClass]="
                                 getClass({
+                                    'overflow-hidden': true,
                                     'pr-0 sm:pr-20 lg:pr-40 w-full sm:w-1/2 lg:w-2/5 z-0':
                                         block.alignment === 'left',
                                     'flex flex-col justify-center items-center':
@@ -221,111 +222,78 @@
                                     </div>
                                 </ng-container>
                                 <!-- DEPOSITIONS -->
-                                <div
+                                <swiper
+                                    class="w-full h-full"
                                     *ngIf="row.type === 'depositions'"
-                                    class="flex"
+                                    [config]="config"
                                 >
-                                    <button
-                                        class="mt-44"
-                                        mat-icon-button
-                                        (click)="
-                                            tabs.selectedIndex =
-                                                (row.list.length +
-                                                    ((tabs.selectedIndex - 1) %
-                                                        12)) %
-                                                row.list.length
-                                        "
+                                    <ng-template
+                                        swiperSlide
+                                        *ngFor="let dep of row.list"
+                                        class="max-w-80 md:max-w-160 w-full self-center"
                                     >
-                                        <mat-icon
-                                            svgIcon="heroicons_outline:chevron-left"
-                                        ></mat-icon>
-                                    </button>
-                                    <mat-tab-group
-                                        class="tab-no-header"
-                                        #tabs
-                                        dynamicHeight
-                                        mat-align-tabs="center"
-                                    >
-                                        <mat-tab
-                                            *ngFor="
-                                                let dep of row.list;
-                                                let i = index
-                                            "
+                                        <fuse-card
+                                            class="flex flex-col md:flex-row items-center justify-between p-8 mb-12 mt-4 transition hover:drop-shadow-xl"
                                         >
-                                            <fuse-card
-                                                class="flex flex-col md:flex-row items-center justify-between max-w-80 md:max-w-160 w-full p-8 my-5 sm:mx-5 transition hover:drop-shadow-xl"
+                                            <img
+                                                [src]="dep.img"
+                                                class="w-40 md:mr-8 mb-8 md:mb-0 rounded-full object-cover"
+                                            />
+                                            <div
+                                                class="flex flex-col flex-auto justify-center prose"
                                             >
-                                                <img
-                                                    [src]="dep.img"
-                                                    class="w-40 md:mr-8 mb-8 md:mb-0 rounded-full object-cover"
-                                                />
                                                 <div
-                                                    class="flex flex-col flex-auto justify-center prose"
+                                                    class="text-lg italic leading-relaxed whitespace-pre-wrap"
                                                 >
-                                                    <div
-                                                        class="text-lg italic leading-relaxed whitespace-pre-wrap"
-                                                    >
-                                                        {{ dep.text }}
-                                                    </div>
-                                                    <div
-                                                        class="text-md font-medium text-primary mt-4"
-                                                    >
-                                                        {{ dep.author }},
-                                                        <br />
-                                                        {{ dep.role }}
-                                                    </div>
+                                                    {{ dep.text }}
                                                 </div>
-                                            </fuse-card>
-                                        </mat-tab>
-                                    </mat-tab-group>
-                                    <button
-                                        class="mt-44"
-                                        mat-icon-button
-                                        (click)="
-                                            tabs.selectedIndex =
-                                                (tabs.selectedIndex + 1) %
-                                                row.list.length
-                                        "
-                                    >
-                                        <mat-icon
-                                            svgIcon="heroicons_outline:chevron-right"
-                                        ></mat-icon>
-                                    </button>
-                                </div>
-                                <div
+                                                <div
+                                                    class="text-md font-medium text-primary mt-4"
+                                                >
+                                                    {{ dep.author }},
+                                                    <br />
+                                                    {{ dep.role }}
+                                                </div>
+                                            </div>
+                                        </fuse-card>
+                                    </ng-template>
+                                </swiper>
+                                <!-- LOGOS -->
+                                <swiper
                                     *ngIf="row.type === 'logos'"
-                                    class="flex items-center flex-wrap justify-center"
+                                    [config]="config"
+                                    class="w-full h-full"
                                 >
-                                    <div
+                                    <ng-template
+                                        swiperSlide
                                         *ngFor="let logo of row.list"
-                                        class="flex items-center px-3"
+                                        class="max-w-80 md:max-w-160 w-full flex flex-wrap justify-center items-center pb-12 pt-3 self-center"
                                     >
                                         <a
-                                            class="flex items-center hover:shadow hover:bg-white transition duration-500 p-3 rounded-xl cursor-pointer flex-wrap justify-center"
                                             [href]="logo.link"
                                             target="_blank"
+                                            class="w-64 pr-5 cursor-pointer"
                                         >
-                                            <div class="w-64 pr-5">
-                                                <img [src]="logo.image" />
-                                            </div>
-                                            <div
-                                                class="relative flex flex-col max-w-80 w-full"
-                                            >
-                                                <span
-                                                    class="absolute top-0 left-0 text-9xl font-serif text-primary leading-none"
-                                                >
-                                                    “
-                                                </span>
-                                                <div
-                                                    class="text-lg italic leading-relaxed mt-4"
-                                                >
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                    {{ logo.text }}
-                                                </div>
-                                            </div>
+                                            <img [src]="logo.image" />
                                         </a>
-                                    </div>
-                                </div>
+                                        <div
+                                            *ngIf="logo.text"
+                                            class="relative flex flex-col max-w-80 w-full"
+                                        >
+                                            <span
+                                                class="absolute top-0 left-0 text-9xl font-serif text-primary leading-none"
+                                            >
+                                                “
+                                            </span>
+                                            <div
+                                                class="text-lg italic leading-relaxed mt-4"
+                                            >
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                {{ logo.text }}
+                                            </div>
+                                        </div>
+                                    </ng-template>
+                                </swiper>
                             </ng-container>
                         </div>
                     </div>
