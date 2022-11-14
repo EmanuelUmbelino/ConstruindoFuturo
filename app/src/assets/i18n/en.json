@@ -1,8 +1,9 @@
 {
+    "Em breve": "Available soon",
     "pages": {
         "Home": [
             {
-                "background": "/assets/images/photos/roda.jpg",
+                "video": "/assets/video/main.mp4",
                 "alignment": "center",
                 "size": "main",
                 "structure": [
@@ -107,7 +108,7 @@
                 ]
             },
             {
-                "background": "/assets/images/photos/criancas-2.jpg",
+                "background": "/assets/images/photos/roda.jpg",
                 "alignment": "left",
                 "structure": [
                     {
@@ -119,10 +120,6 @@
                         "type": "text",
                         "text": "We develop projects based on the United Nations Sustainable Development Goals. Get to know the initiatives implemented by our volunteers",
                         "size": "text"
-                    },
-                    {
-                        "type": "button",
-                        "text": "Projetos"
                     }
                 ]
             },
@@ -181,6 +178,24 @@
                                 "role": "CF Ambassador at the PH Botafogo College (Rio de Janeiro)"
                             },
                             {
+                                "img": "assets/images/avatars/Stephen P. Ben.jpeg",
+                                "text": "I've experienced an imense growth in my personal and professional life thanks to CF. \nI entered CF with a very limited understanding of social change but, thanks the bootcamp and CF's leadership training, now I am much more proficient in managing social change initiatives. \nI recommend CF to any young person wanting to solve problems in their communities!",
+                                "author": "Stephen P. Ben",
+                                "role": "CF Ambassador in Liberia"
+                            },
+                            {
+                                "img": "assets/images/avatars/Giovanna Nessar.jpeg",
+                                "text": "By volunteering at Construindo Futuro, I was able to make the desire I always had to do something to improve the world come true. I have only gratitude and good memories along with this organization, and it is rewarding to know that I can be myself next to these welcoming people, we are all a CF family.",
+                                "author": "Giovanna Nessar",
+                                "role": "Embaixadora do CF no Colégio PH (Rio de Janeiro)"
+                            },
+                            {
+                                "img": "assets/images/avatars/Camyla Monteiro - embaixadora Vidigal.jpg",
+                                "text": "Home. Belonging. Fulfillment. These words represent what being a CF Ambassador means to me. \nBefore CF, I used to feel alone in my ambitions to create projects, insecure in speaking about the causes I believe, and I didn't know how to act toward a better future. \nAfter CF, I developed my self-confidence and my first social and environmental community mobilizations, besides being welcomed by people who wanted to listen to me. CF awakened the leadership that I didn't know I had.",
+                                "author": "Camyla Monteiro",
+                                "role": "Embaixadora do CF no Vidigal (Rio de Janeiro)"
+                            },
+                            {
                                 "img": "assets/images/avatars/Karina Castañeda Tellez.jpg",
                                 "text": "I am delighted to be founding one of CF's first embassies in Mexico. CF has been a fantastic opportunity not only for me to create change and learn to be a leader in my own community but to meet people from all over the world and create a space where we all feel supported and can share our experiences.",
                                 "author": "Karina Castañeda Tellez",
@@ -203,10 +218,6 @@
                         "type": "text",
                         "text": "CF embassies are groups of young people who come together to work together towards sustainable development and the UN SDGs in their schools, universities, communities, cities and regions.",
                         "size": "text"
-                    },
-                    {
-                        "type": "button",
-                        "text": "Projects"
                     }
                 ]
             },
@@ -215,7 +226,7 @@
                 "structure": [
                     {
                         "type": "text",
-                        "text": "CF in the media",
+                        "text": "Media Features",
                         "size": "title"
                     },
                     {

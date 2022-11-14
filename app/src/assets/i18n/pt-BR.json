@@ -1,8 +1,9 @@
 {
+    "Em breve": "Em breve",
     "pages": {
         "Home": [
             {
-                "background": "/assets/images/photos/roda.jpg",
+                "video": "/assets/video/main.mp4",
                 "alignment": "center",
                 "size": "main",
                 "structure": [
@@ -107,7 +108,7 @@
                 ]
             },
             {
-                "background": "/assets/images/photos/criancas-2.jpg",
+                "background": "/assets/images/photos/roda.jpg",
                 "alignment": "left",
                 "structure": [
                     {
@@ -119,10 +120,6 @@
                         "type": "text",
                         "text": "O CF desenvolve projetos baseados nos Objetivos de Desenvolvimento Sustentável. Conheça as incríveis iniciativas implementadas pelos nossos voluntários!",
                         "size": "text"
-                    },
-                    {
-                        "type": "button",
-                        "text": "Projetos"
                     }
                 ]
             },
@@ -185,6 +182,24 @@
                                 "role": "Embaixadora do CF no Colégio PH Botafogo (Rio de Janeiro)"
                             },
                             {
+                                "img": "assets/images/avatars/Stephen P. Ben.jpeg",
+                                "text": "Tive um crescimento imenso na minha vida pessoal e profissional graças ao CF. \nEntrei no CF com uma compreensão muito limitada da mudança social mas, graças ao Bootcamp e à formação de liderança que tive como embaixador, adquiri muito conhecimento na gestão de iniciativas de mudança sociombiental. \nRecomendo o CF a qualquer jovem que queira resolver problemas nas suas comunidades!",
+                                "author": "Stephen P. Ben",
+                                "role": "Embaixador do CF na Libéria"
+                            },
+                            {
+                                "img": "assets/images/avatars/Giovanna Nessar.jpeg",
+                                "text": "Me voluntariando no Construindo Futuro, consegui tornar realidade o desejo que sempre tive de fazer algo para melhorar o mundo. Só tenho gratidão e realizações junto com essa organização e é gratificante saber que você posso ser eu mesma ao lado de pessoas acolhedoras, somos todos uma família CF.",
+                                "author": "Giovanna Nessar",
+                                "role": "Embaixadora do CF no Colégio PH (Rio de Janeiro)"
+                            },
+                            {
+                                "img": "assets/images/avatars/Camyla Monteiro - embaixadora Vidigal.jpg",
+                                "text": "Acolhimento. Identificação. Pertencimento. Estas são as principais palavras que para mim significa ser embaixadora do Construindo o Futuro. \nAntes de conhecer o projeto eu me sentia sozinha nas minhas ambições de criar projetos, sentia insegurança em falar sobre o que eu acredito e não sabia como pôr em prática ações em prol de um futuro melhor. Quando me tornei embaixadora do Construindo o Futuro, desenvolvi minha autoconfiança e minhas primeiras mobilizações comunitárias socioambientais, além de ser acolhida por pessoas que queriam me ouvir. O CF despertou a liderança que eu não sabia que tinha.",
+                                "author": "Camyla Monteiro",
+                                "role": "Embaixadora do CF no Vidigal (Rio de Janeiro)"
+                            },
+                            {
                                 "img": "assets/images/avatars/Karina Castañeda Tellez.jpg",
                                 "text": "Sou muito grata por estar fundando uma das primeiras embaixadas da CF no México. O CF tem sido uma oportunidade fantástica não apenas para eu aprender a ser uma líder e promover mudanças em minha própria comunidade, mas para conhecer pessoas de todo o mundo e criar um espaço onde todos nós nos sentimos apoiados e podemos compartilhar nossas experiências.",
                                 "author": "Karina Castañeda Tellez",
@@ -207,10 +222,6 @@
                         "type": "text",
                         "text": "As embaixadas do CF são grupos de jovens que se juntam para trabalharem juntos em prol do desenvolvimento sustentável e das ODS da ONU em suas escolas, universidades, comunidades, cidades e regiões.",
                         "size": "text"
-                    },
-                    {
-                        "type": "button",
-                        "text": "Projetos"
                     }
                 ]
             },

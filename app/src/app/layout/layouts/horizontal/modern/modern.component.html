@@ -20,6 +20,12 @@
                     alt="Logo image"
                 />
             </div>
+            <div
+                *transloco="let t"
+                class="pt-6 pb-8 px-8 font-semibold text-xl"
+            >
+                {{ t("Em breve") }}...
+            </div>
         </ng-container>
     </fuse-vertical-navigation>
 </ng-container>
@@ -123,6 +129,13 @@
         <!-- <img class="w-12" src="assets/images/logo/logo-black.svg" /> -->
         <div class="w-12 h-12 icon-stroke"></div>
         <div>
+            <a
+                mat-icon-button
+                href="https://www.instagram.com/construindofuturoglobal/"
+                target="_blank"
+            >
+                <mat-icon svgIcon="feather:instagram"></mat-icon>
+            </a>
             <a
                 mat-icon-button
                 href="https://www.instagram.com/construindofuturobr/"
