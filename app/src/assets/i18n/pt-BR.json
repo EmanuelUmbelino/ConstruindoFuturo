@@ -271,6 +271,32 @@
                         ]
                     }
                 ]
+            },
+            {
+                "alignment": "center",
+                "join": "bottom",
+                "structure": [
+                    {
+                        "type": "text",
+                        "text": "CF no Mundo",
+                        "size": "title"
+                    },
+                    {
+                        "type": "text",
+                        "text": "Encontre as embaixadas do CF ao redor do mundo!",
+                        "size": "text"
+                    }
+                ]
+            },
+            {
+                "alignment": "spaced",
+                "join": "top",
+                "structure": [
+                    {
+                        "type": "map",
+                        "link": "https://www.google.com/maps/d/embed?mid=1B9Fpyvak_e0OyZuBZekplZZh4gTeb-xe&ehbc=2E312"
+                    }
+                ]
             }
         ]
     },

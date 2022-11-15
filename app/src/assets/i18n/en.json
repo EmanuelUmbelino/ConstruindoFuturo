@@ -267,6 +267,32 @@
                         ]
                     }
                 ]
+            },
+            {
+                "alignment": "center",
+                "join": "bottom",
+                "structure": [
+                    {
+                        "type": "text",
+                        "text": "CF around the world",
+                        "size": "title"
+                    },
+                    {
+                        "type": "text",
+                        "text": "Find CF embassies around the world!",
+                        "size": "text"
+                    }
+                ]
+            },
+            {
+                "alignment": "spaced",
+                "join": "top",
+                "structure": [
+                    {
+                        "type": "map",
+                        "link": "https://www.google.com/maps/d/embed?mid=1B9Fpyvak_e0OyZuBZekplZZh4gTeb-xe&ehbc=2E312"
+                    }
+                ]
             }
         ]
     },

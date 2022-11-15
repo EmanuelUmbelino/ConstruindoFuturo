@@ -305,6 +305,17 @@
                                         </div>
                                     </ng-template>
                                 </swiper>
+
+                                <!-- Map -->
+                                <div
+                                    *ngIf="row.type === 'map'"
+                                    class="flex flex-col flex-wrap justify-center pt-10 w-full"
+                                >
+                                    <iframe
+                                        src="https://www.google.com/maps/d/embed?mid=1B9Fpyvak_e0OyZuBZekplZZh4gTeb-xe&ehbc=2E312F"
+                                        class="w-full h-[70vh]"
+                                    ></iframe>
+                                </div>
                             </ng-container>
                         </div>
                     </div>
